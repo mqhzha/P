@@ -9,6 +9,9 @@ package chapter13.queue;
  *
  * @author love
  */
-public class IGenQ {
+public interface IGenQ<T> {
+    
+     void put(T t) throws QueueFullException;
+     T get() throws QueueEmptyException;
     
 }
